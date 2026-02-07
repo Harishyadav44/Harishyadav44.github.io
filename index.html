@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harish Kumar — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- animated SVG background (replaces the previous Three.js wireframe) -->
+  <svg id="bg-illustration" aria-hidden="true" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <radialGradient id="g1" cx="30%" cy="20%" r="60%">
+        <stop offset="0%" stop-color="#1b0036" stop-opacity="1" />
+        <stop offset="60%" stop-color="#0b0214" stop-opacity="0.9" />
+        <stop offset="100%" stop-color="#000" stop-opacity="1" />
+      </radialGradient>
+      <filter id="blurme"><feGaussianBlur stdDeviation="60" /></filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#g1)"></rect>
+    <g id="blobs" filter="url(#blurme)">
+      <circle class="blob" cx="300" cy="220" r="180" fill="#6f2cff" fill-opacity="0.55"></circle>
+      <circle class="blob" cx="1200" cy="300" r="220" fill="#00ffd1" fill-opacity="0.35"></circle>
+      <circle class="blob" cx="800" cy="700" r="260" fill="#5b1bff" fill-opacity="0.25"></circle>
+    </g>
+    <g id="stars" opacity="0.7"></g>
+  </svg>
+
+  <div class="page-wrap">
+  <header class="header">
+    <div class="header-left">
+      <div class="logo-wrap">
+        <span class="aura aura-1"></span>
+        <span class="aura aura-2"></span>
+        <a href="#" class="logo">Harish Kumar</a>
+      </div>
+      <div class="header-social">
+        <a href="mailto:hryadav7056@gmail.com" class="social-icon" aria-label="Email" title="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/harish-kumar-3b18b9253/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/Harishyadav44" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main class="main-3d">
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+      <div class="hero-aura">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+      <p class="hero-tag flow-in">AI & Machine Learning</p>
+      <h1 class="hero-title flow-in">
+        Hi, I'm <span class="highlight">Harish Kumar</span>.
+        <br>AI & Machine Learning Student. Building real-world ML and Computer Vision solutions.
+      </h1>
+      <p class="hero-desc flow-in">
+        B.Tech AI & ML student with hands-on experience in Machine Learning, NLP, and Computer Vision. Built projects like Face Recognition, Fake Job Detection, and Digit Recognition using Python.
+      </p>
+      <div class="hero-cta flow-in">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <h2 class="section-title flow-in">About me</h2>
+      <div class="about-grid">
+        <div class="about-content flow-in">
+          <p>
+            I'm a B.Tech Computer Science (AI & ML) student at Jagannath University, Bahadurgarh, with a passion for building practical ML and Computer Vision applications.
+          </p>
+          <ul class="about-list">
+            <li>End-to-end pipelines: Data Preprocessing, Model Training, Deployment with Streamlit and custom GUIs.</li>
+            <li>Mentored junior students in college hackathons; enjoy exploring new tools and problem-solving.</li>
+          </ul>
+          <a href="#contact" class="link-arrow">Let's work together →</a>
+        </div>
+        <div class="about-visual flow-in">
+          <div class="about-card">
+            <span class="about-stat">B.Tech</span>
+            <span class="about-label">AI & ML · 2022–2026</span>
+          </div>
+          <div class="about-card">
+            <span class="about-stat">5+</span>
+            <span class="about-label">Projects shipped</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <h2 class="section-title flow-in">Technical Builds</h2>
+      <div class="projects-wrap">
+        <div class="neon-line" aria-hidden="true"></div>
+        <div class="neon-indicator" aria-hidden="true"></div>
+        <div class="project-list">
+          <article class="project-card flow-in">
+            <div class="project-info">
+              <h3>Face Recognition System</h3>
+              <ul class="project-desc-list">
+                <li>End-to-end real-time face recognition with dataset generation, model training, and live identification.</li>
+                <li>Haar Cascade face detection, LBPH feature extraction, Tkinter GUI for capture/train/recognize, confidence scoring, and persistent labels + classifier.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Haar Cascade</span>
+                <span>LBPH</span>
+                <span>Tkinter</span>
+              </div>
+              <a href="https://github.com/Harishyadav44/Face_Recognition_GUI" class="project-link" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
+          </article>
+
+          <article class="project-card flow-in">
+            <div class="project-info">
+              <h3>Fake Job Posting Detector(ML + NLP)</h3>
+              <ul class="project-desc-list">
+                <li>NLP-based fraud detection for classifying job postings as Real or Fake.</li>
+                <li>Text preprocessing → TF-IDF → Logistic Regression. Streamlit demo with explainability.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Scikit-learn</span>
+                <span>Streamlit</span>
+                <span>Logistic Regression</span>
+              </div>
+              <a href="https://github.com/Harishyadav44/Fake-job-detector" class="project-link" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
+          </article>
+
+          <article class="project-card flow-in">
+            <div class="project-info">
+              <h3>Face Emotion Recognition</h3>
+              <ul class="project-desc-list">
+                <li>Real-time face emotion recognition using OpenCV detection and DeepFace analysis.</li>
+                <li>Webcam and image upload demo with per-face probabilities.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>DeepFace</span>
+                <span>Streamlit</span>
+              </div>
+              <a href="https://github.com/Harishyadav44/face-emotion-cam" class="project-link" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
+          </article>
+
+          <article class="project-card flow-in">
+            <div class="project-info">
+              <h3>2D Airplane Shooting Game</h3>
+              <ul class="project-desc-list">
+                <li>2D arcade shooter with scrolling background, collision detection, boss fights, power-ups, and optimized game loop.</li>
+                <li>Built with Pygame, now playable live in the browser.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Pygame</span>
+                <span>Game Dev</span>
+              </div>
+              <a href="https://github.com/Harishyadav44/Airplane-game-" class="project-link" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
+          </article>
+
+          <article class="project-card flow-in">
+            <div class="project-info">
+              <h3>Handwritten Digit Recognition (CNN-MNIST)</h3>
+              <ul class="project-desc-list">
+                <li>CNN-based digit recognition on MNIST with ~99% test accuracy.</li>
+                <li>Multi-layer CNN built with Keras and TensorFlow, plus visual prediction samples.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Numpy</span>
+                <span>CNN</span>
+                <span>Keras</span>
+                <span>TensorFlow</span>
+              </div>
+              <a href="https://github.com/Harishyadav44/Handwritten-digit-recognition-cnn" class="project-link" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <h2 class="section-title flow-in">Skills & tools</h2>
+      <div class="skills-grid">
+        <div class="skill-group flow-in">
+          <h3>ML & Deep Learning</h3>
+          <ul class="skills-list">
+            <li>PyTorch</li>
+            <li>TensorFlow</li>
+            <li>Keras</li>
+            <li>Scikit-learn</li>
+            <li>OpenCV</li>
+            <li>DeepFace</li>
+            <li>CNN</li>
+            <li>Classification</li>
+            <li>Prediction</li>
+            <li>Data Preprocessing</li>
+            <li>Image Processing</li>
+          </ul>
+        </div>
+        <div class="skill-group flow-in">
+          <h3>Data & Visualization</h3>
+          <ul class="skills-list">
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Plotly</li>
+            <li>Power BI</li>
+            <li>Data Analysis</li>
+            <li>Data Visualization</li>
+          </ul>
+        </div>
+        <div class="skill-group flow-in">
+          <h3>Languages & Platforms</h3>
+          <ul class="skills-list">
+            <li>Python</li>
+            <li>C</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>MySQL</li>
+            <li>Git & GitHub</li>
+            <li>Jupyter Notebook & Google Colab</li>
+            <li>Streamlit </li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section certificates flow-in">
+      <h2 class="section-title">Professional Certifications</h2>
+  
+      <div class="cert-list">
+        <ul class="cert-ul">
+          <li>
+            <strong>Python for Data Science</strong> — IIT Madras (NPTEL)
+            <p style="font-size: 0.85rem; margin: 4px 0;">Score: 58% | July-Aug 2025</p>
+            <a href="https://drive.google.com/file/d/1ukyFmVs7IwMLlS1zqgiMPp9tBDFuy9YC/view?usp=drive_link" target="_blank" class="link-arrow">View Credential →</a>
+          </li>
+
+          <li>
+            <strong>Database Management System</strong> — IIT Kharagpur (NPTEL)
+            <p style="font-size: 0.85rem; margin: 4px 0;">Score: 51% | July-Sep 2025</p>
+            <a href="https://drive.google.com/file/d/1ZbPePXdLYpyyx0TE9S4ugg8HgA2QsOsH/view?usp=drive_link" target="_blank" class="link-arrow">View Credential →</a>
+          </li>
+
+          <li>
+            <strong>Software Testing</strong> — IIT Kharagpur (NPTEL)
+            <p style="font-size: 0.85rem; margin: 4px 0;">Score: 64% | Jan-Feb 2025</p>
+            <a href="https://drive.google.com/file/d/1uq6JYTvQYMc1mAnodYDXxgExhxjybamn/view?usp=drive_link" target="_blank" class="link-arrow">View Credential →</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2 class="section-title flow-in">Open for Internships</h2>
+      <p class="contact-intro flow-in">
+        Currently seeking Immediate Internship opportunities. Primary focus on <span class="highlight">AI/ML & Computer Vision (Deep Learning, Image Processing)</span> and <span class="highlight">Python Development (Backend & Automation).</span> Also open to <span class="highlight">Data Analytics and Software Testing</span> roles. Based in Delhi, India. 
+      </p>
+      <div class="contact-links flow-in">
+        <a href="mailto:hryadav7056@gmail.com" class="contact-link">hryadav7056@gmail.com</a>
+        <a href="https://www.linkedin.com/in/harish-kumar-3b18b9253/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+        <a href="https://github.com/Harishyadav44" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Harish Kumar.</p>
+  </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
